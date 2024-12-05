@@ -1,0 +1,245 @@
+* {
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.img-1 {
+
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-top: 200px;
+    float: left;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.5s ease-in-out, width 1s ease-in-out;
+    z-index: 2;
+ }
+
+
+    .img-1:hover {
+    	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.9);
+    	width: 750px;
+    }
+
+    
+}
+h1 {
+	padding-left: 100px;
+	padding-top: 20px;
+	color: blue;
+}
+
+h3 {
+	padding-left: 100px;
+	padding-top: 20px;
+	color: pink;
+}
+
+
+nav {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	background-color: #4287f5;
+	padding: 16px;
+
+
+}
+
+
+/* Styles fot links and nav */
+nav a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+
+#Logo {
+	font-size: 16px;
+	font-weight: 900;
+}
+
+
+/* removes default styling of checkbox */
+
+input[type="checkbox"] {
+	appearance: none;
+	-webkit-appearance: none;
+}
+
+label{
+	color: f2f2f2;
+	cursor: pointer;
+	display: none;
+
+}
+
+
+/* container for navigation menu */
+.menuc {
+	list-style: none;
+	display: flex;
+	gap: 16px;
+}
+
+.menuc a {
+	padding: 8px;
+	transition: 0.5s ease-in-out;
+}
+
+.menuc a:hover {
+	background-color: darkgray;
+	width: 100%;
+	text-shadow: 0 0 1px #f2f2f2, 0 0 1px #f2f2f2;
+	transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+
+ 	label {
+ 		display: block;
+ 	}
+ 	.menuc {
+ 		flex-direction: column;
+ 		align-items: center;
+ 		position: absolute;
+ 		justify-content: center;
+ 		background-color: #4287f5;
+ 		text-align: center;
+ 		gap: 32px;
+ 		top: 45px;
+ 		width: 100%;
+ 		height: calc(100vh - 80px);
+ 		left: -100%;
+ 		transition: 0.5s;
+ 		z-index: 1;
+
+ 	}
+
+ 	.menuc a {
+ 		width: 100%;
+
+ 	}
+
+ 	input[type="checkbox"]:checked ~ .menuc {
+ 		left: 0;
+}
+
+.img-1 {
+	width: 350px;
+	margin-top: 20px;
+
+}
+
+.img-1:hover {
+	width:400px;
+
+
+	}
+
+}
+
+
+.container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+	top: 0;
+	margin-top: 4%;
+
+}
+
+
+.box div {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border: 6px solid hsl(0, 0%, 0%);
+	border-radius: 50%;
+}
+
+
+.box div:nth-child(1) {
+	top: 30%;
+	right: 4%;
+	animation: move 5s ease-in-out infinite;
+}
+
+
+.box div:nth-child(2) {
+	top: 30%;
+	right: 4%;
+	animation: move 5s ease-in-out infinite;
+}
+
+.box div:nth-child(3) {
+	top: 42%;
+	right: 20%;
+	animation: move 4s ease-in-out infinite;
+}
+
+.box div:nth-child(4) {
+	top: 20%;
+	right: 90%;
+	animation: move 4s ease-in-out infinite;
+}
+
+
+.box div:nth-child(5) {
+	top: 60%;
+	right:37%;
+	animation: move 8s ease-in-out infinite;
+}
+
+
+.box div:nth-child(6) {
+	top: 30%;
+	right: 4%;
+	animation: move 5s ease-in-out infinite;
+}
+
+
+.box div:nth-child(7) {
+	top: 30%;
+	right: 4%;
+	animation: move 3s ease-in-out infinite;
+}
+
+
+.box div:nth-child(8) {
+	top: 30%;
+	right: 4%;
+	animation: move 7s ease-in-out infinite;
+}
+
+
+@keyframes move {
+	0% {
+		transform: scale(3) translate(0) rotate(12deg);
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.6;
+	}
+
+
+	100% {
+		transform: scale(3) translate(-90%) rotate(360deg);
+		opacity: 0;
+	}
+
+
+
+
+
+
+}
